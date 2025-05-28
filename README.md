@@ -6,7 +6,41 @@
 
 ![alt text](./assets/logos.png)
 
+*Abstract*: Autonomous agents often require accurate methods for detecting and localizing changes in their environment, particularly when observations are captured from unconstrained and inconsistent viewpoints. We propose a novel label-free, pose-agnostic change detection method that integrates information from multiple viewpoints to construct a change-aware 3D Gaussian Splatting (3DGS) representation of the scene. With as few as 5 images of the post-change scene, our approach can learn an additional change channel in a 3DGS and produce change masks that outperform single-view techniques. Our change-aware 3D scene representation additionally enables the generation of accurate change masks for unseen viewpoints. Experimental results demonstrate state-of-the-art performance in complex multi-object scenes, achieving a 1.7x and 1.5x improvement in Mean Intersection Over Union and F1 score, respectively, over other baselines. 
+We also contribute a new real-world dataset to benchmark change detection in diverse challenging scenes in the presence of lighting variations.
 
+## BibTex
+```shell
+@inproceedings{galappaththige2025mv3dcd,
+      title={Multi-View Pose-Agnostic Change Localization with Zero Labels}, 
+      author={Chamuditha Jayanga Galappaththige and Jason Lai and Lloyd Windrim and Donald Dansereau and Niko Suenderhauf and Dimity Miller},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      year={2025},
+}
+```
+## Environment Setup
+
+We use `Conda` for environment and package management. 
+```shell
+conda create -n mv3dcd python=3.8
+conda activate mv3dcd
+```
+PyTorch (Please use a compatible CUDA version - code was tested with 12.4)
+```shell
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu124
+```
+Install `gsplat`
+```shell
+pip install git+https://github.com/nerfstudio-project/gsplat.git@v1.4.0
+```
+Install other required libraries
+```shell
+pip install plyfile opencv-python timm matplotlib scikit-learn torchmetrics
+```
+Build and install `simple-knn`
+```shell
+pip install submodules/simple-knn
+```
 
 
 
