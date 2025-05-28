@@ -18,6 +18,16 @@ We also contribute a new real-world dataset to benchmark change detection in div
       year={2025},
 }
 ```
+
+## Dataset
+
+We have released our ***Pose-Agnostic Scene Level Change Detection (PASLCD) Dataset*** on [Hugging Face](https://huggingface.co/datasets/ChamudithaJay/PASLCD/tree/main). You can either manually download the dataset by visiting [Hugging Face](https://huggingface.co/datasets/ChamudithaJay/PASLCD/tree/main) or download the dataset using `huggingface-cli`.
+```shell
+pip install -U "huggingface_hub[cli]"
+huggingface-cli download ChamudithaJay/PASLCD PASLCD.zip --local-dir data/ --repo-type dataset
+unzip ./data/PASLCD.zip -d ./data/
+```
+
 ## Environment Setup
 
 We use `Conda` for environment and package management. 
