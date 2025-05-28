@@ -58,7 +58,7 @@ To run the experiments for all 10 scene you can use the `run.sh` script
 ```shell
 bash run.sh
 ```
-I have tested and reprduced the results with `PyTorch==2.4.0, gsplat==1.4.0, CUDA==12.4` on `RTX4080` and `A100`. You can expect the resluts to be slightly better than the reported.  
+I have tested and reproduced the results with `PyTorch==2.4.0, gsplat==1.4.0, CUDA==12.4` on `RTX4080` and `A100`. You can expect the resluts to be slightly better than the reported.  
 
 Although our implementation is based on the vanilla 3DGS, our method can be easily integrated into most approaches that have made numerous advancements to the original 3DGS. If you make any such integrations, feel free to open a pull request.
 
