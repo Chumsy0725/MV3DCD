@@ -52,6 +52,22 @@ Build and install `simple-knn`
 pip install submodules/simple-knn
 ```
 
+## Running Experiments
+
+To run the experiments for all 10 scene you can use the `run.sh` script
+```shell
+bash run.sh
+```
+I have tested and reprduced the results with `PyTorch==2.4.0, gsplat==1.4.0, CUDA==12.4` on `RTX4080` and `A100`. You can expect the resluts to be slightly better than the reported.  
+
+### Acknowledgement
+
+Our code is based on [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting), [Feature-3DGS](https://github.com/ShijieZhou-UCLA/feature-3dgs) and [Dino-vit-features](https://github.com/ShirAmir/dino-vit-features). We sincerely thank the authors for opensourcing their codebase. 
+
+### Funding Acknowledgement
+
+This work was supported by the ARC Research Hub in Intelligent Robotic Systems for Real-Time Asset Management (ARIAM) (IH210100030) and Abyss Solutions. C.J., N.S., and D.M. also acknowledge ongoing support from the QUT Centre for Robotics.
+
 
 
 
