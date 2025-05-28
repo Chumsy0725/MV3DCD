@@ -9,7 +9,7 @@
 *Abstract*: Autonomous agents often require accurate methods for detecting and localizing changes in their environment, particularly when observations are captured from unconstrained and inconsistent viewpoints. We propose a novel label-free, pose-agnostic change detection method that integrates information from multiple viewpoints to construct a change-aware 3D Gaussian Splatting (3DGS) representation of the scene. With as few as 5 images of the post-change scene, our approach can learn an additional change channel in a 3DGS and produce change masks that outperform single-view techniques. Our change-aware 3D scene representation additionally enables the generation of accurate change masks for unseen viewpoints. Experimental results demonstrate state-of-the-art performance in complex multi-object scenes, achieving a 1.7x and 1.5x improvement in Mean Intersection Over Union and F1 score, respectively, over other baselines. 
 We also contribute a new real-world dataset to benchmark change detection in diverse challenging scenes in the presence of lighting variations.
 
-## BibTex
+## BibTeX
 ```shell
 @inproceedings{galappaththige2025mv3dcd,
       title={Multi-View Pose-Agnostic Change Localization with Zero Labels}, 
@@ -59,6 +59,8 @@ To run the experiments for all 10 scene you can use the `run.sh` script
 bash run.sh
 ```
 I have tested and reprduced the results with `PyTorch==2.4.0, gsplat==1.4.0, CUDA==12.4` on `RTX4080` and `A100`. You can expect the resluts to be slightly better than the reported.  
+
+Although our implementation is based on the vanilla 3DGS, our method can be easily integrated into most approaches that have made numerous advancements to the original 3DGS. If you make any such integrations, feel free to open a pull request.
 
 ### Acknowledgement
 
