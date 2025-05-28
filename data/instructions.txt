@@ -1,0 +1,9 @@
+huggingface-cli download ChamudithaJay/PASLCD PASLCD.zip --local-dir data/ --repo-type dataset
+
+or 
+
+wget https://huggingface.co/datasets/ChamudithaJay/PASLCD/resolve/main/PASLCD.zip
+
+or 
+
+visit https://huggingface.co/datasets/ChamudithaJay/PASLCD
