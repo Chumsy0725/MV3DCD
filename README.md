@@ -64,7 +64,7 @@ Although our implementation is based on the vanilla 3DGS, our method can be easi
 
 ### Acknowledgement
 
-Our code is based on [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting), [Feature-3DGS](https://github.com/ShijieZhou-UCLA/feature-3dgs) and [Dino-vit-features](https://github.com/ShirAmir/dino-vit-features). We sincerely thank the authors for opensourcing their codebase. 
+Our code is based on [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting), [Feature-3DGS](https://github.com/ShijieZhou-UCLA/feature-3dgs), [DINOv2](https://github.com/facebookresearch/dinov2) and [Dino-vit-features](https://github.com/ShirAmir/dino-vit-features). We sincerely thank the authors for opensourcing their codebase. 
 
 ### Funding Acknowledgement
 
