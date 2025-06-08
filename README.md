@@ -11,11 +11,13 @@ We also contribute a new real-world dataset to benchmark change detection in div
 
 ## BibTeX
 ```shell
-@inproceedings{galappaththige2025mv3dcd,
-      title={Multi-View Pose-Agnostic Change Localization with Zero Labels}, 
-      author={Chamuditha Jayanga Galappaththige and Jason Lai and Lloyd Windrim and Donald Dansereau and Niko Suenderhauf and Dimity Miller},
-      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-      year={2025},
+@InProceedings{Galappaththige_2025_CVPR,
+    author    = {Galappaththige, Chamuditha Jayanga and Lai, Jason and Windrim, Lloyd and Dansereau, Donald and Sunderhauf, Niko and Miller, Dimity},
+    title     = {Multi-View Pose-Agnostic Change Localization with Zero Labels},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {11600-11610}
 }
 ```
 
